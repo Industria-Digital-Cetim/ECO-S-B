@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Fabricación NanoCelulosa</title>
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    <div style="background-color:paleGreen">
+    <h1 style="">Proceso de fabricación de fibras de nanocelulosa</h1>
+    <hr>
+  </div>
+
+    <h3>Fase 1 - Selección de pasta de celulosa</h3>
+
+    <form>
+      <strong> <label for="codigo1" > Código: </label> </strong>
+      <input type = "text" name="codigo1" id="codigo1"  size="12" required>
+      <strong> <label for="origen" > Origen de la pasta: </label> </strong>
+      <select name="origen" id="origen">
+        <option value="Pino">Pino</option>
+        <option value="Abeto">Abeto</option>
+        <option value="Eucalipto">Eucalipto</option>
+      </select>
+      <strong> <label for="cantidad" > Cantidad: </label> </strong>
+      <input type = "text" name="cantidad" id="cantidad" placeholder="" size="6">
+      <strong> <label for="grup1" > Grupos funcionales: </label> </strong>
+      <input type = "text" name="grup1" id="grup1" placeholder="grupos fun" size="8">
+      <strong> <label for="car_esp" > Características especiales: </label> </strong>
+      <select name="car_esp" id="car_esp">
+        <option>Ninguna</option>
+        <option>Exceso Lignina</option>
+        <option>Exceso emicelulosa</option>
+        <option>Otra</option>
+      </select>
+    </form>
+    <br>
+    <button id="btPasta" > Registrar </button>
+    <hr>
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <h3>Fase 2 - Pretratamiento mecánico</h3>
+    <form>
+      <strong> <label for="codigo2" > Código: </label> </strong>
+      <input type = "text" name="codigo2" id="codigo2" placeholder="" size="12">
+      <strong><label for="tipo_pre">Técnica: </label></strong>
+      <select name="tipo_pre" id="tipo_pre">
+        <option>Molino de cuchillas</option>
+        <option>Refinador</option>
+      </select>
+      <strong> <label for="cantidad2" > Cantidad obtenida: </label> </strong>
+      <input type = "text" name="cantidad2" id="cantidad2" placeholder="" size="6">
+      <strong> <label for="tam2" > Tamaño: </label> </strong>
+      <input type = "text" name="tam2" id="tam2" placeholder="" size="6">
+    </form>
+    <br>
+    <button id="btPreMecanico" > Registrar </button>
+    <hr>
+
+  <!--------------------------------------------------------------------------------------------------------------------------->
+  <h3>Fase 3 - Pretratamiento Enzimático</h3>
+  <form>
+    <strong> <label for="codigo3" > Código: </label> </strong>
+    <input type = "text" name="codigo3" id="codigo3" placeholder="" size="12">
+    <strong><label for="enzima">Enzima: </label></strong>
+    <select name="enzima" id="enzima">
+      <option>Enzima1</option>
+      <option>Enzima2</option>
+      <option>Enzima3</option>
+    </select>
+    <strong> <label for="cant_enz" > Cantidad enzima: </label> </strong>
+    <input type = "text" name="cant_enz" id="cant_enz" placeholder="" size="5">
+    <strong> <label for="tiempo3" > Tiempo de reacción: </label> </strong>
+    <input type = "text" name="tiempo3" id="tiempo3" placeholder="" size="5">
+    <strong> <label for="tem`p3" > Temperatura reactor: </label> </strong>
+    <input type = "text" name="temp3" id="temp3" placeholder="" size="5">
+  </form>
+  <br>
+  <form>
+    <strong> <label for="cantidad3" > Cantidad obtenida: </label> </strong>
+    <input type = "text" name="cantidad3" id="cantidad3" placeholder="" size="6">
+    <strong> <label for="tam3" > Tamaño: </label> </strong>
+    <input type = "text" name="tam3" id="tam3" placeholder="" size="6">
+    <strong> <label for="comp3" > Composición: </label> </strong>
+    <input type = "text" name="comp3" id="comp3" placeholder="" size="6">
+  </form>
+  <br>
+  <button id="btPreEnzima" > Registrar </button>
+  <hr>
+<!--------------------------------------------------------------------------------------------------------------------------->
+
+<h3>Fase 4 - Pretratamiento Químico</h3>
+<form>
+  <strong> <label for="codigo4" > Código: </label> </strong>
+  <input type = "text" name="codigo4" id="codigo4" placeholder="" size="12">
+  <strong> <label for="cant_tempo" > Cantidad TEMPO: </label> </strong>
+  <input type = "text" name="cant_tempo" id="cant_tempo" placeholder="" size="3">
+  <strong> <label for="cant_bro" > Cantidad bromuro sódico: </label> </strong>
+  <input type = "text" name="cant_bro" id="cant_bro" placeholder="" size="3">
+  <strong> <label for="cant_clo" > Cantidad hipoclorito sódico: </label> </strong>
+  <input type = "text" name="cant_clo" id="cant_clo" placeholder="" size="3">
+  <strong> <label for="cant_sosa" > Cantidad sosa: </label> </strong>
+  <input type = "text" name="cant_sosa" id="cant_sosa" placeholder="" size="3">
+  <strong> <label for="ph_ant4" > pH inicial: </label> </strong>
+  <input type = "text" name="ph_ant4" id="ph_ant4" placeholder="" size="3">
+</form>
+<br>
+<form>
+  <strong> <label for="cantidad4" > Cantidad obtenida: </label> </strong>
+  <input type = "text" name="cantidad4" id="cantidad4" placeholder="" size="4">
+  <strong> <label for="tam4" > Tamaño: </label> </strong>
+  <input type = "text" name="tam4" id="tam4" placeholder="" size="4">
+  <strong> <label for="comp4" > Composición: </label> </strong>
+  <input type = "text" name="comp4" id="comp4" placeholder="" size="4">
+</form>
+<br>
+<button id="btPreQuimico" > Registrar </button>
+<hr>
+<!--------------------------------------------------------------------------------------------------------------------------->
+    <h3>Fase 5 - Homogenización</h3>
+    <form>
+      <div id="presion">
+
+      <strong> <label for="pasos5" > Número de pasos: </label> </strong>
+      <input type = "text" name="pasos5" id="pasos5" placeholder="" size="1">
+
+        <strong> <label for="presion" > Presión: </label> </strong>
+      </div>
+    </form>
+    <br>
+    <form>
+      <strong> <label for="codigo5" > Código: </label> </strong>
+      <input type = "text" name="codigo5" id="codigo5" placeholder="" size="12">
+      <strong> <label for="cantidad5" > Cantidad obtenida: </label> </strong>
+      <input type = "text" name="cantidad5" id="cantidad5" placeholder="" size="6">
+      <strong> <label for="tam5" > Tamaño: </label> </strong>
+      <input type = "text" name="tam5" id="tam5" placeholder="" size="6">
+      <strong> <label for="comp5" > Composición: </label> </strong>
+      <input type = "text" name="comp5" id="comp5" placeholder="" size="6">
+    </form>
+    <br>
+    <button id="btPasos" > Fijar pasos</button>
+    <button id="btHomo" > Registrar </button>
+    <hr>
+  <!--------------------------------------------------------------------------------------------------------------------------->
+    <h3>Fase 6 - Secado</h3>
+    <form>
+      <strong><label for="secado">Proceso de secado: </label></strong>
+      <select name="secado" id="secado">
+        <option>Si</option>
+        <option>No</option>
+      </select>
+      <strong> <label for="codigo6" > Código: </label> </strong>
+      <input type = "text" name="codigo6" id="codigo6" placeholder="" size="12">
+      <strong> <label for="v_bomba" > Velocidad de la bomba: </label> </strong>
+      <input type = "text" name="v_bomba" id="v_bomba" placeholder="" size="6">
+      <strong> <label for="temp_in" > Temperatura de entrada: </label> </strong>
+      <input type = "text" name="temp_in" id="temp_in" placeholder="" size="6">
+      <strong> <label for="temp_out" > Temperatura de salida: </label> </strong>
+      <input type = "text" name="temp_out" id="temp_out" placeholder="" size="6">
+  </form>
+  <br>
+    <button id="btSecado" > Registrar </button>
+    <hr>
+      <!--------------------------------------------------------------------------------------------------------------------------->
+    <h3>Fase 7 - Fibras de Nanocelulosa</h3>
+    <form>
+      <strong> <label for="codigo7" > Código: </label> </strong>
+      <input type = "text" name="codigo7" id="codigo7" placeholder="" size="12">
+      <strong> <label for="cantidad_final" > Cantidad: </label> </strong>
+      <input type = "text" name="cantidad_final" id="cantidad_final" placeholder="" size="6">
+      <strong> <label for="tam_final" >Tamaño: </label> </strong>
+      <input type = "text" name="tam_final" id="tam_final" placeholder="" size="6">
+      <strong> <label for="grup_final" >Grupos funcionales: </label> </strong>
+      <input type = "text" name="grup_final" id="grup_final" placeholder="" size="6">
+      <strong> <label for="viscosidad" >Viscosidad: </label> </strong>
+      <input type = "text" name="viscosidad" id="viscosidad" placeholder="" size="6">
+    </form>
+    <br>
+    <button id="btNanocelulosa" > Registrar </button>
+    <hr>
+    <script src="bundle.js" type="module"></script>
+  </body>
+</html>
