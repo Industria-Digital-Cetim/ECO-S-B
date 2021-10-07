@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Información Nanocelulosa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+
+  <body>
+    <h1>Consultar información</h1>
+      <!-- <div style="position:absolute; width:200px; height:80px; top: 20px; left: 600px"><img src="cetim.JPG" height="80px" width= "200px"></div> -->
+
+      <strong> <label for="codigo1" > Código: </label> </strong>
+      <input type = "text" name="codigo1" id="codigo1" placeholder="" size="12">
+      <br> <br>
+      <strong> <label for="fase" > Elige la fase: </label> </strong>
+      <select name="fase" id="fase">
+        <option value="f1">1- Elección de pasta de celulosa</option>
+        <option value="f2">2- Pretratamiento mecánico</option>
+        <option value="f3">3- Pretratamiento enzimático</option>
+        <option value="f4">4- Pretratamiento químico</option>
+        <option value="f5">5- Homogenización</option>
+        <option value="f6">6- Secado</option>
+        <option value="f7">7- Producto final</option>
+      </select>
+	<div style="position:absolute; width:300px; height:80px; top: 40px; left: 600px"><img src="cetim.JPG" height="100px" width= "200px"></div>
+    <br> <br>
+    <button id="btConsultar" > Consultar </button>
+
+    <p id="resultado"> </p>
+
+    <p id="anteriores"> </p>
+    <script src="index.js"></script>
+  </body>
+</html>
