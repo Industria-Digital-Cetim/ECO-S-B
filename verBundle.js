@@ -32237,7 +32237,178 @@ function extend() {
 },{}],243:[function(require,module,exports){
 const Web3 = require("web3");
 const fs = require('fs');
-const TrazaCelulosa = JSON.parse(fs.readFile('https://ipfs.infura.io:5001/api/v0/cat?arg=QmdHpH2U83oyuLJijvqG7K6KywBnpFeeyQ8mHASA7v8Xok'));
+const TrazaCelulosa = {
+  "contractName": "trazaNanoCelulosa",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "codigo",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "origen",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "celulosa",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "hemi",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "lignina",
+          "type": "string"
+        }
+      ],
+      "name": "registrarPastaCelulosa",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "codigo",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "ancho",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "conductividad",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "formato",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "porcentaje_susp",
+          "type": "string"
+        }
+      ],
+      "name": "registrarNanoCelulosa",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "codigo",
+          "type": "string"
+        },
+        {
+          "internalType": "uint8",
+          "name": "mec",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "enzi",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "qui",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "homo",
+          "type": "uint8"
+        }
+      ],
+      "name": "registrarProcesos",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "codigo",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "fase",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "hashTX",
+          "type": "string"
+        }
+      ],
+      "name": "registrarHashTx",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "codigo",
+          "type": "string"
+        }
+      ],
+      "name": "retornaHashTx",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+};
 
 // CONEXION
 const myAddress = "0xe94a2b97c1b8c2eed542575d923913f7a1d667a5";
