@@ -32241,7 +32241,7 @@ const TrazaCelulosa = JSON.parse(fs.readFileSync('../trazaNanoCelulosa.json', 'u
 
 // CONEXION
 const myAddress = "0xe94a2b97c1b8c2eed542575d923913f7a1d667a5";
-const contract_address ="0x91F020Cd65031Cd3DFE5d078504F592ADC031a53";
+const contract_address ="0xb61F2d6b52Ed0d6683787c28B7717ad74D509D52";
 const url_infura ="https://rinkeby.infura.io/v3/e4edca9c5b3143b4915068824bbe3cac";
 const url ="http://127.0.0.1:8545/";
 const web3 = new Web3(url_infura);
