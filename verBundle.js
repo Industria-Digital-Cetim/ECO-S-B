@@ -32237,7 +32237,7 @@ function extend() {
 },{}],243:[function(require,module,exports){
 const Web3 = require("web3");
 const fs = require('fs');
-const TrazaCelulosa = JSON.parse(fs.readFileSync('../trazaNanoCelulosa.json', 'utf-8'));
+const TrazaCelulosa = JSON.parse(fs.readFile('https://ipfs.infura.io:5001/api/v0/cat?arg=QmdHpH2U83oyuLJijvqG7K6KywBnpFeeyQ8mHASA7v8Xok'));
 
 // CONEXION
 const myAddress = "0xe94a2b97c1b8c2eed542575d923913f7a1d667a5";
