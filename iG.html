@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>REGISTRAR NANOCELULOSA</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Start Content -->
+    <div id="home" class="w3-content">
+    <!-- End Content -->
+    <div class="w3-container  w3-padding-16">
+      <h3 class="w3-wide">SELECCIONA UNA FASE</h3>
+    <select name="s_fase" id="s_fase" class="w3-input" >
+      <option disabled selected hidden> Elegir fase </option>
+      <option value="1"> Registrar pasta de celulosa </option>
+      <option value="2"> Registrar procesos realizados </option>
+      <option value="3"> Registrar características nanocelulosa </option>
+    </select>
+    <br>
+  </div> <!---DIV elegir fase -->
+
+    <div  class="w3-container"   id="PASTA" style="display:none">
+        <h3 class="w3-wide"> <i class="fa fa-tree" aria-hidden="true"></i> PASTA DE CELULOSA</h3>
+    <!---    <p class="w3-opacity w3-center" ><i>Deja tu comentario</i></p>-->
+
+        <input class="w3-input" type="text" placeholder=" Código" required name="Codigo" id="Codigo">
+      <!---  <h5 class="w3-wide"> CARACTERÍSTICAS</h5>-->
+      <!---  <input class="w3-input" type="text" placeholder=" Cantidad" required name="Cantidad" id="Cantidad">
+        <input class="w3-input" type="text" placeholder=" Consistencia (%)" required name="Consistencia" id="Consistencia">-->
+        <input class="w3-input" type="text" placeholder=" Celulosa (%)*" required name="Celulosa" id="Celulosa">
+        <input class="w3-input" type="text" placeholder=" Hemicelulosa (%)*" required name="Hemicelulosa" id="Hemicelulosa">
+        <input class="w3-input" type="text" placeholder=" Lignina (%)*" required name="Lignina" id="Lignina">
+        <select class="w3-input" id="Origen" name="Origen">
+          <option disabled selected hidden >Origen </option>
+          <option> Abeto </option>
+          <option> Eucalipto </option>
+          <option> Pino </option>
+        </select>
+        <br>
+            <button class="w3-button w3-black" id="btPasta" >REGISTRAR</button>
+            <br>
+            <p><i>*: Solo rellenar con el número. No poner el símbolo "%"<p>
+    </div> <!---DIV pasta celulosa -->
+
+    <div  class="w3-container" id="PROCESOS" style="display:none">
+        <h3 class="w3-wide"> <i class="fa fa-refresh" aria-hidden="true"></i>  PROCESOS</h3>
+        <input class="w3-input" type="text" placeholder="Código" required name="Codigo2" id="Codigo2">
+
+        <h5 class="w3-wide"> PROCESOS REALIZADOS </h5>
+
+        <input id="mecanico" class="w3-check" type="checkbox" value=" Pretratamiento Mecánico">
+        <label> Pretratamiento Mecánico</label>
+        <br>
+        <input id="enzimatico" class="w3-check" type="checkbox" value="Pretratamiento Enzimático">
+        <label>Pretratamiento Enzimático</label>
+        <br>
+        <input id="quimico" class="w3-check" type="checkbox" value="Pretratamiento Químico">
+        <label>Pretratamiento Químico</label>
+        <br>
+        <input id="homogenizacion" class="w3-check" type="checkbox" value="Homogenización">
+        <label>Homogenización</label>
+        <br><br>
+        <button class="w3-button w3-black" id="btProceso" >REGISTRAR</button>
+    </div> <!---DIV procesos -->
+
+    <div  class="w3-container" id="NANOCELULOSA" style="display:none">
+        <h3 class="w3-wide"> <i class="fa fa-leaf"></i> NANOCELULOSA</h3>
+            <input class="w3-input" type="text" placeholder=" Código" required name="Codigo3" id="Codigo3">
+            <input class="w3-input" type="text" placeholder=" Ancho medio de la partícula*" required name="ancho" id="ancho">
+            <input class="w3-input" type="text" placeholder=" Conductividad iónica*" required name="conductividad" id="conductividad">
+            <select class="w3-input" id="formato" name="formato">
+              <option disabled selected hidden >Formato </option>
+              <option value="seca"> Seca </option>
+              <option value="susp"> Suspensión </option>
+            </select>
+            <input class="w3-input" type="text" placeholder=" Porcentaje en suspensión (%)**" required name="susp_porcentaje" id="susp_porcentaje" style="display:none">
+            <br>
+            <button class="w3-button w3-black" id="btNano" >REGISTRAR</button>
+
+            <br>
+            <p><i>*: Se deben escribir las unidades de medida utilizadas<p>
+            <p style="display:none" id="p_ex">**: Solo rellenar con el número. No poner el símbolo "%" </p>
+    </div> <!---DIV nano celulosa -->
+
+</div> <!---DIV FINAL -->
+    <script src="guardaBundle.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </body>
+</html>
