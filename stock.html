@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GESTÓN DE STOCK</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <style>
+  </style>
+   <div id="home" class="w3-content">
+     <h1 class="w3-wide"> Gestión del stock </h1>
+
+     <button class="w3-button w3-black w3-col m2" id="btAdd" >AÑADIR</button>
+     <button class="w3-button w3-black w3-col m2" id="btDelete" >BORRAR</button>
+     <button class="w3-button w3-black w3-col m2" id="btCheck">CONSULTAR</button>
+     <button class="w3-button w3-black w3-col m2" id="btRegRefresh" >REFRESCAR</button>
+
+ <!---------------------------------------------------------------------------------->
+ <br><br><br>
+     <div  class="w3-container" id="DivAddStock" style="display:none">
+            <h3 class="w3-wide"> <i class="fas fa-plus"></i></i> AÑADIR STOCK</h3>
+                <input class="w3-input" type="text" placeholder=" Código botella" required name="codigo1" id="codigo1">
+                <input class="w3-input" type="text" placeholder=" Peso (kg)" required name="peso1" id="peso1">
+                <input class="w3-input" type="text" placeholder=" Origen" required name="origen1" id="origen1">
+                <br>
+                <button class="w3-button w3-grey w3-border" id="btRegAdd" >REGISTRAR</button>
+        </div> <!---DIV add stock -->
+         <!---------------------------------------------------------------------------------->
+     <div  class="w3-container" id="DivDeleteStock" style="display:none">
+            <h3 class="w3-wide"> <i class="fas fa-minus"></i> BORRAR ELEMENTO DEL STOCK</h3>
+                   <input class="w3-input" type="text" placeholder=" Código botella" required name="codigo2" id="codigo2">
+                   <br>
+                   <button class="w3-button w3-grey w3-border" id="btRegDelete" >BORRAR</button>
+           </div> <!---DIV delete stock -->
+
+        <!---------------------------------------------------------------------------------->
+           <div  class="w3-container" id="DivCheckStock" style="display:none">
+                    <hr>
+                    <div class="w3-center">
+                      <h5 class="w3-wide">STOCK ACTUAL</h5 >
+                    </div>
+                    <div class="w3-responsive w3-card-4">
+                      <table class="w3-table w3-striped w3-bordered" id="stockActual">
+                        <thead>
+                          <tr class="w3-theme">
+                            <th>Código</th>
+                            <th>Fecha</th>
+                            <th>Origen</th>
+                            <th>Peso</th>
+        <!--  <th> <button><i class="fas fa-plus" style="font-size:20px"></i> </button></th>-->
+                            <th> Eliminar </button></th>
+                          </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tbody>
+                      </table>
+                    </div>
+                    <br>  <br>
+                    <p id="total" class="w3-wide"> </id>
+                 </div> <!---DIV check stock -->
+
+              <!---------------------------------------------------------------------------------->
+
+
+
+
+   </div> <!-- DIV FINAL -->
+    <script src="index.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </body>
+</html>
